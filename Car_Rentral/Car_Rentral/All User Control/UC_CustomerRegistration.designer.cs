@@ -63,55 +63,56 @@ namespace DBMS_ManagerCar.All_User_Control
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 23);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(42, 34);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(377, 40);
+            this.label1.Size = new System.Drawing.Size(258, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Customer Registration";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(161, 140);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 22);
+            this.label2.Size = new System.Drawing.Size(66, 28);
             this.label2.TabIndex = 3;
             this.label2.Text = "Name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(161, 264);
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(160, 249);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 22);
+            this.label3.Size = new System.Drawing.Size(108, 28);
             this.label3.TabIndex = 4;
             this.label3.Text = "Mobile No";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(161, 372);
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(160, 366);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 22);
+            this.label5.Size = new System.Drawing.Size(79, 28);
             this.label5.TabIndex = 6;
             this.label5.Text = "Gender";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(161, 471);
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(160, 468);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 22);
+            this.label6.Size = new System.Drawing.Size(123, 25);
             this.label6.TabIndex = 7;
             this.label6.Text = "Date of Birth";
             // 
@@ -184,6 +185,7 @@ namespace DBMS_ManagerCar.All_User_Control
             this.txtDoB.Checked = true;
             this.txtDoB.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
             this.txtDoB.CheckedState.ForeColor = System.Drawing.Color.White;
+            this.txtDoB.FillColor = System.Drawing.Color.RoyalBlue;
             this.txtDoB.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDoB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtDoB.Location = new System.Drawing.Point(165, 513);
@@ -199,9 +201,10 @@ namespace DBMS_ManagerCar.All_User_Control
             this.txtCheckIn.Checked = true;
             this.txtCheckIn.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
             this.txtCheckIn.CheckedState.ForeColor = System.Drawing.Color.White;
+            this.txtCheckIn.FillColor = System.Drawing.Color.RoyalBlue;
             this.txtCheckIn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCheckIn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtCheckIn.Location = new System.Drawing.Point(785, 290);
+            this.txtCheckIn.Location = new System.Drawing.Point(785, 303);
             this.txtCheckIn.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.txtCheckIn.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.txtCheckIn.Name = "txtCheckIn";
@@ -234,22 +237,22 @@ namespace DBMS_ManagerCar.All_User_Control
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(781, 264);
             this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(129, 22);
+            this.label7.Size = new System.Drawing.Size(130, 28);
             this.label7.TabIndex = 15;
             this.label7.Text = "BookingDate";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(781, 140);
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(780, 140);
             this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 22);
+            this.label8.Size = new System.Drawing.Size(85, 28);
             this.label8.TabIndex = 14;
             this.label8.Text = "Address";
             // 
@@ -278,11 +281,11 @@ namespace DBMS_ManagerCar.All_User_Control
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(1403, 140);
             this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 22);
+            this.label11.Size = new System.Drawing.Size(51, 28);
             this.label11.TabIndex = 21;
             this.label11.Text = "Seat";
             // 
@@ -306,11 +309,11 @@ namespace DBMS_ManagerCar.All_User_Control
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(1402, 354);
             this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(105, 22);
+            this.label12.Size = new System.Drawing.Size(101, 28);
             this.label12.TabIndex = 23;
             this.label12.Text = "Car Name";
             // 
@@ -339,11 +342,11 @@ namespace DBMS_ManagerCar.All_User_Control
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(1403, 264);
             this.label13.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(50, 22);
+            this.label13.Size = new System.Drawing.Size(57, 28);
             this.label13.TabIndex = 25;
             this.label13.Text = "Time";
             this.label13.Click += new System.EventHandler(this.label13_Click);
@@ -351,7 +354,6 @@ namespace DBMS_ManagerCar.All_User_Control
             // btnAlloteRoom
             // 
             this.btnAlloteRoom.BorderRadius = 25;
-            this.btnAlloteRoom.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.btnAlloteRoom.BorderThickness = 1;
             this.btnAlloteRoom.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.btnAlloteRoom.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
@@ -360,12 +362,12 @@ namespace DBMS_ManagerCar.All_User_Control
             this.btnAlloteRoom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAlloteRoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAlloteRoom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAlloteRoom.FillColor = System.Drawing.Color.White;
+            this.btnAlloteRoom.FillColor = System.Drawing.Color.RoyalBlue;
             this.btnAlloteRoom.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlloteRoom.ForeColor = System.Drawing.Color.Black;
-            this.btnAlloteRoom.Location = new System.Drawing.Point(1407, 627);
+            this.btnAlloteRoom.ForeColor = System.Drawing.Color.White;
+            this.btnAlloteRoom.Location = new System.Drawing.Point(1407, 620);
             this.btnAlloteRoom.Name = "btnAlloteRoom";
-            this.btnAlloteRoom.Size = new System.Drawing.Size(180, 45);
+            this.btnAlloteRoom.Size = new System.Drawing.Size(180, 57);
             this.btnAlloteRoom.TabIndex = 27;
             this.btnAlloteRoom.Text = "Rent Car";
             this.btnAlloteRoom.Click += new System.EventHandler(this.btnAlloteRoom_Click);
@@ -395,11 +397,11 @@ namespace DBMS_ManagerCar.All_User_Control
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.Location = new System.Drawing.Point(1403, 471);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 22);
+            this.label4.Size = new System.Drawing.Size(56, 28);
             this.label4.TabIndex = 28;
             this.label4.Text = "Price";
             // 

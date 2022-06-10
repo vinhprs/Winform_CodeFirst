@@ -71,5 +71,25 @@ namespace DBMS_ManagerCar
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void labelError_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frm_DBMS_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

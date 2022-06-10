@@ -57,11 +57,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(71, 33);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(70, 54);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(315, 40);
+            this.label1.Size = new System.Drawing.Size(294, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Car Management";
             // 
@@ -93,13 +93,13 @@
             this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridView1.EnableHeadersVisualStyles = false;
             this.DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGridView1.Location = new System.Drawing.Point(78, 93);
+            this.DataGridView1.Location = new System.Drawing.Point(78, 123);
             this.DataGridView1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.DataGridView1.Name = "DataGridView1";
             this.DataGridView1.RowHeadersVisible = false;
             this.DataGridView1.RowHeadersWidth = 51;
             this.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView1.Size = new System.Drawing.Size(726, 584);
+            this.DataGridView1.Size = new System.Drawing.Size(726, 514);
             this.DataGridView1.TabIndex = 1;
             this.DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -127,48 +127,51 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(881, 196);
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(881, 185);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 22);
+            this.label3.Size = new System.Drawing.Size(91, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "Category";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(881, 298);
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(881, 281);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 22);
+            this.label4.Size = new System.Drawing.Size(98, 25);
             this.label4.TabIndex = 4;
             this.label4.Text = "Car Name";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(881, 459);
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(881, 466);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 22);
+            this.label5.Size = new System.Drawing.Size(54, 25);
             this.label5.TabIndex = 5;
             this.label5.Text = "Price";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // txtPrice
             // 
             this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(885, 486);
+            this.txtPrice.Location = new System.Drawing.Point(885, 513);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(440, 31);
             this.txtPrice.TabIndex = 6;
+            this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
             // 
             // txtType
             // 
             this.txtType.BackColor = System.Drawing.Color.Transparent;
+            this.txtType.BorderRadius = 50;
             this.txtType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txtType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -181,16 +184,18 @@
             "GIADINH",
             "THETHAO",
             "PHOTHONG"});
-            this.txtType.Location = new System.Drawing.Point(885, 235);
+            this.txtType.Location = new System.Drawing.Point(885, 215);
             this.txtType.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txtType.Name = "txtType";
             this.txtType.Size = new System.Drawing.Size(440, 36);
             this.txtType.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtType.TabIndex = 12;
+            this.txtType.SelectedIndexChanged += new System.EventHandler(this.txtType_SelectedIndexChanged);
             // 
             // btnAddCar
             // 
-            this.btnAddCar.BackColor = System.Drawing.Color.White;
+            this.btnAddCar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddCar.BorderColor = System.Drawing.Color.Transparent;
             this.btnAddCar.BorderRadius = 23;
             this.btnAddCar.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.btnAddCar.BorderThickness = 1;
@@ -201,13 +206,13 @@
             this.btnAddCar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddCar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAddCar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddCar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.btnAddCar.FillColor = System.Drawing.Color.RoyalBlue;
             this.btnAddCar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCar.ForeColor = System.Drawing.Color.Black;
-            this.btnAddCar.Location = new System.Drawing.Point(1197, 553);
+            this.btnAddCar.ForeColor = System.Drawing.Color.White;
+            this.btnAddCar.Location = new System.Drawing.Point(1205, 590);
             this.btnAddCar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnAddCar.Name = "btnAddCar";
-            this.btnAddCar.Size = new System.Drawing.Size(128, 72);
+            this.btnAddCar.Size = new System.Drawing.Size(120, 47);
             this.btnAddCar.TabIndex = 14;
             this.btnAddCar.Text = "Add";
             this.btnAddCar.Click += new System.EventHandler(this.btnAddCar_Click);
@@ -265,22 +270,24 @@
             // txtCar
             // 
             this.txtCar.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCar.Location = new System.Drawing.Point(885, 325);
+            this.txtCar.Location = new System.Drawing.Point(885, 311);
             this.txtCar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txtCar.Name = "txtCar";
             this.txtCar.Size = new System.Drawing.Size(440, 31);
             this.txtCar.TabIndex = 18;
+            this.txtCar.TextChanged += new System.EventHandler(this.txtCar_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(881, 377);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(881, 371);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 22);
+            this.label2.Size = new System.Drawing.Size(58, 25);
             this.label2.TabIndex = 19;
             this.label2.Text = "Color";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtColor
             // 
@@ -298,7 +305,7 @@
             "White",
             "Green",
             "Blue"});
-            this.txtColor.Location = new System.Drawing.Point(885, 404);
+            this.txtColor.Location = new System.Drawing.Point(885, 401);
             this.txtColor.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txtColor.Name = "txtColor";
             this.txtColor.Size = new System.Drawing.Size(440, 36);
@@ -309,6 +316,8 @@
             // txtManu
             // 
             this.txtManu.BackColor = System.Drawing.Color.Transparent;
+            this.txtManu.BorderColor = System.Drawing.Color.Transparent;
+            this.txtManu.BorderRadius = 50;
             this.txtManu.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txtManu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtManu.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -323,28 +332,29 @@
             "Ferari",
             "Vinfast",
             "RollRoyce"});
-            this.txtManu.Location = new System.Drawing.Point(885, 134);
+            this.txtManu.Location = new System.Drawing.Point(885, 123);
             this.txtManu.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txtManu.Name = "txtManu";
             this.txtManu.Size = new System.Drawing.Size(440, 36);
             this.txtManu.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtManu.TabIndex = 22;
+            this.txtManu.SelectedIndexChanged += new System.EventHandler(this.txtManu_SelectedIndexChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(881, 93);
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(880, 93);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(120, 22);
+            this.label6.Size = new System.Drawing.Size(113, 25);
             this.label6.TabIndex = 21;
             this.label6.Text = "Manufactor";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // guna2Button1
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.White;
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
             this.guna2Button1.BorderRadius = 23;
             this.guna2Button1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.guna2Button1.BorderThickness = 1;
@@ -355,20 +365,21 @@
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.RoyalBlue;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(1041, 553);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(1043, 590);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(128, 72);
+            this.guna2Button1.Size = new System.Drawing.Size(110, 46);
             this.guna2Button1.TabIndex = 23;
             this.guna2Button1.Text = "Edit";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // btnDeleteCar
             // 
-            this.btnDeleteCar.BackColor = System.Drawing.Color.White;
+            this.btnDeleteCar.BackColor = System.Drawing.Color.Transparent;
+            this.btnDeleteCar.BorderColor = System.Drawing.Color.Transparent;
             this.btnDeleteCar.BorderRadius = 23;
             this.btnDeleteCar.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.btnDeleteCar.BorderThickness = 1;
@@ -379,13 +390,13 @@
             this.btnDeleteCar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDeleteCar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDeleteCar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeleteCar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.btnDeleteCar.FillColor = System.Drawing.Color.RoyalBlue;
             this.btnDeleteCar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteCar.ForeColor = System.Drawing.Color.Black;
-            this.btnDeleteCar.Location = new System.Drawing.Point(885, 553);
+            this.btnDeleteCar.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteCar.Location = new System.Drawing.Point(885, 590);
             this.btnDeleteCar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnDeleteCar.Name = "btnDeleteCar";
-            this.btnDeleteCar.Size = new System.Drawing.Size(128, 72);
+            this.btnDeleteCar.Size = new System.Drawing.Size(122, 46);
             this.btnDeleteCar.TabIndex = 24;
             this.btnDeleteCar.Text = "Delete";
             this.btnDeleteCar.Click += new System.EventHandler(this.btnDeleteCar_Click);

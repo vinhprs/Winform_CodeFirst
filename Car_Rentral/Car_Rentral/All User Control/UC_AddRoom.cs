@@ -174,5 +174,34 @@ namespace DBMS_ManagerCar.All_User_Control
 
         }
 
+        private void txtManu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

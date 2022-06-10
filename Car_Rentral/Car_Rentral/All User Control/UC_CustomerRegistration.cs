@@ -124,5 +124,10 @@ namespace DBMS_ManagerCar.All_User_Control
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

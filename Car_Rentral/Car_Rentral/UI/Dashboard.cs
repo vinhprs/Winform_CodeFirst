@@ -27,7 +27,7 @@ namespace DBMS_ManagerCar
 
         private void btnCustomerRegistration_Click(object sender, EventArgs e)
         {
-            MovingPanel.Left = btnCustomerRegistration.Left + 18;
+            
 
             uC_CustomerRegistration1.Visible = true;
             uC_CustomerRegistration1.BringToFront();
@@ -36,7 +36,7 @@ namespace DBMS_ManagerCar
 
         private void btnAddCars_Click(object sender, EventArgs e)
         {
-            MovingPanel.Left = btnAddCars.Left +18;
+            
             uC_AddRoom1.Visible = true;
             uC_AddRoom1.BringToFront();
         }
@@ -46,7 +46,7 @@ namespace DBMS_ManagerCar
             uC_UserCheckOut1.Visible = true;
             uC_UserCheckOut1.BringToFront();
 
-            MovingPanel.Left = btnCheckout.Left +18;
+            
         }
 
         private void btnCustomerDetails_Click(object sender, EventArgs e)
@@ -54,7 +54,7 @@ namespace DBMS_ManagerCar
             uC_CustomerDetail1.Visible = true;
             uC_CustomerDetail1.BringToFront();
 
-            MovingPanel.Left = btnCustomerDetails.Left +18;
+            
         }
 
         private void btnEmployee_Click(object sender, EventArgs e)
@@ -62,7 +62,6 @@ namespace DBMS_ManagerCar
             uC_Employee1.Visible = true;
             uC_Employee1.BringToFront();
 
-            MovingPanel.Left = btnEmployee.Left +18;
         }
 
 
@@ -89,12 +88,7 @@ namespace DBMS_ManagerCar
             var userRole = context.Employees
                             .Where(em => em.UserName == userName)
                             .Select(em => em.Role).First();
-            txtRole.Text = userRole.ToString();
-
-            if (txtRole.Text == "Employee")
-            {
-                btnEmployee.Hide();
-            }
+            
         }
 
         private void uC_AddRoom1_Load_2(object sender, EventArgs e)
@@ -122,6 +116,16 @@ namespace DBMS_ManagerCar
             this.Close();
             frm_DBMS fo = new frm_DBMS();
             fo.Show();
+        }
+
+        private void uC_CustomerRegistration1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uC_UserCheckOut1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

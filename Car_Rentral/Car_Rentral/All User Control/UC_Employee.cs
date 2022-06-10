@@ -46,10 +46,7 @@ namespace DBMS_ManagerCar.All_User_Control
 
                 else
                 {
-                    login.newEmp(name,mobile,gen,mail,userName,pass,role,salary);
-
-                    MessageBox.Show("Employee created!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    login.newEmp(name,mobile,gen,mail,userName,pass,role,salary); 
                     clearAll();
                     getMaxID();
                 }
@@ -133,6 +130,16 @@ namespace DBMS_ManagerCar.All_User_Control
         }
 
         private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEPassword_TextChanged(object sender, EventArgs e)
         {
 
         }

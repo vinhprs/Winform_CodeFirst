@@ -41,4 +41,5 @@ C:\Users\kiệt\source\repos\Winform_CostFirst\Car_Rentral\Car_Rentral\bin\Debug
 C:\Users\kiệt\source\repos\Winform_CostFirst\Car_Rentral\Car_Rentral\bin\Debug\EntityFramework.xml
 C:\Users\kiệt\source\repos\Winform_CostFirst\Car_Rentral\Car_Rentral\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\kiệt\source\repos\Winform_CostFirst\Car_Rentral\Car_Rentral\obj\Debug\Car_Rentral.csproj.CopyComplete
+C:\Users\kiệt\source\repos\Winform_CostFirst\Car_Rentral\Car_Rentral\bin\Debug\Guna.UI.dll
 C:\Users\kiệt\source\repos\Winform_CostFirst\Car_Rentral\Car_Rentral\obj\Debug\Car_Rentral.csproj.AssemblyReference.cache
